@@ -56,9 +56,9 @@ $Message .= "\n\n";
 
 echo "\nAlle Daten gesammelt.\n\n";
 
-$rc = mail("mail@solaranzeige.de","Statusreport: ".$Objekt,$Message,"from: pi@raspberry.solaranzeige.de");
+$rc = mail("christian@koellings.de","Statusreport: ".$Objekt,$Message,"from: pi@raspberry.solaranzeige.de");
 if ($rc == 1) {
-  echo "\neMail wurde an mail@solaranzeige.de versendet.\n\n";
+  echo "\neMail wurde an christian@koellings.de versendet.\n\n";
 }
 
 

@@ -19,8 +19,7 @@ if [ "$1" == "-f" ]; then
   exit
 
  else
-#  Zur Zeit ausgeschaltet
-#  sudo resize2fs  /dev/mmcblk0p2
+
   echo " "
 fi
 
@@ -41,7 +40,7 @@ echo "Grafana Plugin's werden auf neuere Versionen geprüft."
 echo "-----------------------------------------------------------"
 echo " "
 
-sudo grafana-cli plugins update-all
+#sudo grafana-cli plugins update-all
 
 sudo cp /var/www/html/user.config.neu.php  /var/www/html/user.config.php
 
